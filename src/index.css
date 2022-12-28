@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+
+/* =================== Font Import ======================== */
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+        url("./assets/font/Montserrat/static/Montserrat-Regular.ttf")
+            format("ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    src: local("Montserrat Alternates"),
+        url("./assets/font/Montserrat-Alternates/MontserratAlternates-Regular.ttf")
+            format("ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+        url("./assets/font/Roboto/Roboto-Regular.ttf") format("ttf");
+}
+
+/* =================== Basic Styles ======================== */
+
+*,
+*::before,
+*::after {
+    -webkit-user-drag: none;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    @apply w-2 bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply w-0 bg-primary rounded-2xl;
+}
+
+::selection {
+    @apply text-white bg-primary;
+}
+
+body {
+    @apply cursor-default overflow-x-hidden bg-off-white text-black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+bold,
+a {
+    @apply font-heading;
+}
+
+p {
+    @apply font-para font-medium;
+}
+
+.row {
+    @apply w-row-sm max-w-7xl m-auto;
+}
+
+.btn {
+    @apply outline-none border-2rem border-solid rounded-md cursor-pointer transition-all duration-300 font-medium;
+}
+
+.btn-primary {
+    @apply bg-primary border-primary text-white hover:bg-transparent hover:text-primary;
+}
+
+.btn-secondary {
+    @apply text-black hover:text-black;
+}
+
+.btn-sm {
+    @apply py-1 px-3;
+}
+
+/* Navigation Section Start */
+
+.nav-page-li {
+    @apply relative pb-2 font-medium;
+}
+
+.nav-page-li:after {
+    @apply absolute left-0 bottom-0  content-[""] block w-0 h-[0.2rem] bg-primary rounded-[9999px] origin-left transition-all duration-300;
+}
+
+.nav-page-li:hover::after {
+    @apply w-full;
+}
+
+.nav-page-li a {
+    @apply transition-all hover:text-primary;
+}
+
+/* Navigation Section End */
+
+@tailwind utilities;
