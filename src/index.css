@@ -37,7 +37,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    @apply w-2 bg-transparent;
+    @apply w-[0.4rem] bg-transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -80,11 +80,15 @@ p {
 }
 
 .btn-secondary {
-    @apply text-black hover:text-black;
+    @apply bg-transparent border-primary text-primary hover:text-white hover:bg-primary;
 }
 
 .btn-sm {
     @apply py-1 px-3;
+}
+
+.btn-md {
+    @apply py-2 px-6;
 }
 
 /* Navigation Section Start */
@@ -101,10 +105,47 @@ p {
     @apply w-full;
 }
 
+.nav-page-li-activate a {
+    @apply text-primary;
+}
+
+.nav-page-li-activate::after {
+    @apply w-full;
+}
+
 .nav-page-li a {
     @apply transition-all hover:text-primary;
 }
 
 /* Navigation Section End */
+
+/* Home Page Start */
+
+.variety-of-food-img-wrapper img:hover {
+    transform: scale(1.2);
+}
+
+/* Home Page End */
+
+/* Contact Page Start */
+
+.section-heading {
+    @apply text-2xl font-semibold py-2 inline relative;
+}
+
+.section-heading:after {
+    @apply absolute content-[""] bottom-0 left-0 z-20 w-full h-[0.2rem] bg-primary rounded-md;
+}
+
+.form-group {
+    @apply w-full;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    @apply py-[0.3rem] pl-4 border-[0.15rem] border-solid border-primary text-black rounded-[0.4rem] transition-all duration-300 w-full outline-none;
+}
+
+/* Contact Page End */
 
 @tailwind utilities;
