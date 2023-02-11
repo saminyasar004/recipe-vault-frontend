@@ -1,13 +1,18 @@
-import { UilSearch } from "@iconscout/react-unicons";
+import { useEffect } from "react";
+import { Search } from "react-bootstrap-icons";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
     const location = useLocation();
     const currentRoute = location.pathname;
-    console.log(currentRoute);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        console.log(currentRoute);
+    }, [location]);
 
     return (
-        <nav className="py-2 sticky z-10 top-0 bg-off-white">
+        <nav className="py-2 sticky z-[1000] top-0 bg-off-white shadow-xl">
             <div className="row grid grid-cols-3">
                 <div>
                     <Link to="/">
@@ -59,11 +64,12 @@ export default function Header() {
                         </li>
                     </ul>
                     <div className="flex items-center justify-between relative">
-                        <UilSearch
+                        <Search
                             className="absolute top-[50%] left-[3%] translate-x-[-3%] translate-y-[-50%] z-10 pointer-events-none"
                             size="18"
                             color="#494949"
                         />
+
                         <input
                             className="bg-white px-4 py-[0.6rem] rounded-lg outline-none pl-10 text-sm placeholder:text-grayish-black"
                             type="text"

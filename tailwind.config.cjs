@@ -16,7 +16,7 @@ module.exports = {
             },
             backgroundImage: {
                 "hero-bg":
-                    "-webkit-gradient(linear, left top, left bottom, from(#e2e2e2e6)), url(/src/assets/img/brooke-lark-HlNcigvUi4Q-unsplash.jpg)",
+                    "-webkit-gradient(linear, left top, left bottom, from(#e2e2e233)), url(/src/assets/img/baked-chicken-wings-asian-style-tomatoes-sauce-plate-top-view-copyspace.jpg)",
                 "newsletter-bg":
                     "-webkit-gradient(linear, left top, left bottom, from(#00000094)), url(/src/assets/img/markus-winkler-UI0ylIEHxMM-unsplash.jpg)",
             },

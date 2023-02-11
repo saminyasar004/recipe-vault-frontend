@@ -1,10 +1,10 @@
 import {
-    UilFacebookF,
-    UilTwitter,
-    UilGithub,
-    UilInstagram,
-    UilLinkedin,
-} from "@iconscout/react-unicons";
+    Facebook,
+    Twitter,
+    Github,
+    Instagram,
+    Linkedin,
+} from "react-bootstrap-icons";
 
 export default function Footer() {
     return (
@@ -28,28 +28,28 @@ export default function Footer() {
                     <ul className="w-full flex items-center justify-around gap-5">
                         <li className="">
                             <a href="#">
-                                <UilGithub size="21" color="#fff" />
+                                <Github size="17" color="#fff" />
                             </a>
                         </li>
                         <li className="">
                             <a href="#">
-                                <UilLinkedin size="21" color="#fff" />
+                                <Linkedin size="17" color="#fff" />
                             </a>
                         </li>
 
                         <li className="">
                             <a href="#">
-                                <UilFacebookF size="21" color="#fff" />
+                                <Facebook size="17" color="#fff" />
                             </a>
                         </li>
                         <li className="">
                             <a href="#">
-                                <UilInstagram size="21" color="#fff" />
+                                <Instagram size="17" color="#fff" />
                             </a>
                         </li>
                         <li className="">
                             <a href="#">
-                                <UilTwitter size="21" color="#fff" />
+                                <Twitter size="17" color="#fff" />
                             </a>
                         </li>
                     </ul>

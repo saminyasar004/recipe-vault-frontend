@@ -2,7 +2,7 @@ export default function Contact() {
     return (
         <section className="py-12 flex items-center justify-around gap-6 flex-col">
             <div className="row flex items-center justify-center">
-                <h2 className="section-heading">Contact us</h2>
+                <h2 className="section-heading">Get in Touch</h2>
             </div>
             <div className="row">
                 <form

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function VarietyOfFood() {
     return (
-        <section className="py-16">
+        <section className="py-16 my-4">
             <div className="row flex items-center justify-between gap-24">
                 <div className="w-full rounded-md overflow-hidden variety-of-food-img-wrapper">
                     <img
@@ -28,7 +28,7 @@ export default function VarietyOfFood() {
                         to="/recipes"
                         className="btn btn-primary capitalize btn-md mt-4"
                     >
-                        view recipes
+                        view recipes ⟶
                     </Link>
                 </div>
             </div>

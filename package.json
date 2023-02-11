@@ -30,8 +30,8 @@
     },
     "homepage": "https://github.com/saminyasar004/recipe-vault-client#readme",
     "dependencies": {
-        "@iconscout/react-unicons": "^1.1.6",
         "react": "^18.2.0",
+        "react-bootstrap-icons": "^1.10.2",
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
